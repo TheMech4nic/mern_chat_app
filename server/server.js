@@ -37,7 +37,6 @@ app.use('/api/messages', messageRoutes);
 const mongoOptions = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  // Skip authentication for local development
   authSource: 'admin',
   serverSelectionTimeoutMS: 5000,
   socketTimeoutMS: 45000
